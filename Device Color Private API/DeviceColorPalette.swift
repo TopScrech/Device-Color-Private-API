@@ -3,6 +3,7 @@ import SwiftUI
 enum DeviceColorPalette {
     static func color(for token: String) -> Color {
         let normalized = token.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        
         if normalized.isEmpty || normalized == "unknown" {
             return Color(uiColor: .systemGray4)
         }
@@ -12,36 +13,29 @@ enum DeviceColorPalette {
         }
         
         switch normalized {
-        case "black", "slate":
-            return .black
-        case "white", "silver":
-            return .white
-        case "gray", "grey":
-            return .gray
-        case "blue":
-            return .blue
-        case "green":
-            return .green
-        case "yellow":
-            return .yellow
-        case "pink":
-            return .pink
-        case "red":
-            return .red
-        default:
-            return Color(uiColor: .systemGray4)
+        case "black", "slate": return .black
+        case "white", "silver": return .white
+        case "gray", "grey": return .gray
+        case "blue": return .blue
+        case "green": return .green
+        case "yellow": return .yellow
+        case "pink": return .pink
+        case "red": return .red
+        default: return Color(uiColor: .systemGray4)
         }
     }
     
     static func foregroundColor(for token: String) -> Color {
         if isDark(token: token) {
-            return .white
+            .white
+        } else {
+            .black
         }
-        return .black
     }
     
     private static func isDark(token: String) -> Bool {
         let normalized = token.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        
         if ["black", "slate", "#3b3b3c", "#99989b"].contains(normalized) {
             return true
         }
