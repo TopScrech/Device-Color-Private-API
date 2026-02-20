@@ -18,7 +18,7 @@ struct DeviceColorsView: View {
                     DeviceColorSwatchCardView(title: "DeviceColor", colorToken: report.deviceColor)
                     DeviceColorSwatchCardView(title: "DeviceEnclosureColor", colorToken: report.deviceEnclosureColor)
                 } else {
-                    if #available(iOS 17.0, *) {
+                    if #available(iOS 17, *) {
                         ContentUnavailableView("No Device Data", systemImage: "exclamationmark.triangle")
                             .padding(.top, 64)
                     } else {
