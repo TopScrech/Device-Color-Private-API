@@ -8,7 +8,7 @@ struct DeviceDetailsCardView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading) {
             Text(report.deviceName)
                 .headline()
             
