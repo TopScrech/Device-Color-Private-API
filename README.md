@@ -10,7 +10,7 @@
 
 Feel free to contribute!
 
-| Device Name | Device Color | Device Eclosure Color |
+| Model | Device Color | Device Eclosure Color |
 |----------------------------------|---|---|
 | iPhone 17 Pro Max Cosmic Orange  | 1 | 8 |
 | iPhone 17 Pro Max Deep Blue      | - | - |
