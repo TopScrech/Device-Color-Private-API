@@ -15,7 +15,7 @@ Feel free to contribute!
 | iPhone 17 Pro Max Cosmic Orange  | 1 | 8 |
 | iPhone 17 Pro Max Deep Blue      | - | - |
 | iPhone 17 Pro Max Silver         | - | - |
-| iPhone 12 mini Purple            | - | - |
+| iPhone 12 mini Purple            | 1 | 17 |
 | iPhone 12 mini Black             | - | - |
 | iPhone 12 mini White             | - | - |
 | iPhone 12 mini (PRODUCT)RED      | - | - |
