@@ -1,7 +1,7 @@
 # Device Color Private API
 
 > [!WARNING]
-> Do not add this in App Store apps, as Apple may reject submissions for private API usage
+> Do not add this to App Store apps, as Apple rejects submissions for private API usage
 
 ## Known mappings
 
