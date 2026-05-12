@@ -2,8 +2,14 @@ import SwiftUI
 
 struct NavContainer: View {
     var body: some View {
-        NavigationStack {
-            DeviceColorsView()
+        if #available(iOS 16, *) {
+            NavigationStack {
+                DeviceColorsView()
+            }
+        } else {
+            NavigationView {
+                DeviceColorsView()
+            }
         }
     }
 }

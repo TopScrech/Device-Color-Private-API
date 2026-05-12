@@ -1,12 +1,16 @@
 import ScrechKit
 
 struct DeviceDetailsCardView: View {
-    let report: DeviceColorReport
+    private let report: DeviceColorReport
+    
+    init(_ report: DeviceColorReport) {
+        self.report = report
+    }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text(report.deviceName)
-                .title(.semibold)
+                .headline()
             
             Text(report.modelCode)
                 .secondary()

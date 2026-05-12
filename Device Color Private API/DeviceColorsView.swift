@@ -14,9 +14,9 @@ struct DeviceColorsView: View {
                         .controlSize(.large)
                         .padding(.top, 64)
                 } else if let report {
-                    DeviceDetailsCardView(report: report)
-                    DeviceColorSwatchCardView(title: "DeviceColor", colorToken: report.deviceColor)
-                    DeviceColorSwatchCardView(title: "DeviceEnclosureColor", colorToken: report.deviceEnclosureColor)
+                    DeviceDetailsCardView(report)
+                    DeviceColorSwatchCardView("DeviceColor", colorToken: report.deviceColor)
+                    DeviceColorSwatchCardView("DeviceEnclosureColor", colorToken: report.deviceEnclosureColor)
                 } else {
                     if #available(iOS 17, *) {
                         ContentUnavailableView("No Device Data", systemImage: "exclamationmark.triangle")
@@ -38,13 +38,7 @@ struct DeviceColorsView: View {
             .padding(.vertical, 16)
         }
         .navigationTitle("Device Colors")
-        .toolbar {
-            if let report {
-                ShareLink(item: report.shareText) {
-                    Label("Share", systemImage: "square.and.arrow.up")
-                }
-            }
-        }
+        .deviceColorToolbar(report)
         .background(
             LinearGradient(
                 colors: backgroundColors,
