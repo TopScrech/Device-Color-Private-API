@@ -4,7 +4,7 @@
 > Do not add this to App Store apps, as Apple rejects submissions for private API usage
 
 # Supported platforms
-- iOS 15+
+- iOS 15+ (iPhone 6S/SE1 & higher)
 
 ## Known mappings
 
