@@ -1,5 +1,5 @@
 import SwiftUI
-import DeviceKit
+import Device
 
 struct DeviceColorRepository {
     static func loadReport() async -> DeviceColorReport {
@@ -108,9 +108,8 @@ struct DeviceColorRepository {
     }
     
     private static func fullDeviceName(fallback: String) -> String {
-        let name = Device.current.description.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        guard !name.isEmpty, name.lowercased() != "unknown" else {
+        guard let name = Device.current.name?.trimmingCharacters(in: .whitespacesAndNewlines),
+              !name.isEmpty, name.lowercased() != "unknown" else {
             return fallback
         }
         

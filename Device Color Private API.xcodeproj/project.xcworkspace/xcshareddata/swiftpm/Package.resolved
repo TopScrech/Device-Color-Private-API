@@ -1,13 +1,12 @@
 {
-  "originHash" : "f3e244091ec22b451591d9166e440951c57e6dabaa9a2fcd0b919c862e2c28a7",
   "pins" : [
     {
-      "identity" : "devicekit",
+      "identity" : "device",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/devicekit/DeviceKit",
+      "location" : "https://github.com/TopScrech/Device",
       "state" : {
-        "revision" : "56b997e8a61707218f9af09f32b2a1d1806fd792",
-        "version" : "5.8.0"
+        "branch" : "main",
+        "revision" : "84e12739b2e904b537e61dfea71595ec630954e4"
       }
     },
     {
