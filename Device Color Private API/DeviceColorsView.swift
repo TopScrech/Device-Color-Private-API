@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct DeviceColorsView: View {
     @Environment(\.colorScheme) private var colorScheme
@@ -27,7 +27,7 @@ struct DeviceColorsView: View {
                                 .font(.system(size: 28))
                                 .foregroundStyle(.secondary)
                             Text("No Device Data")
-                                .font(.headline)
+                                .headline()
                                 .foregroundStyle(.secondary)
                         }
                         .padding(.top, 64)
